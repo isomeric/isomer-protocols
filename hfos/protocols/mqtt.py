@@ -22,7 +22,7 @@ from random import randint
 import struct
 from circuits.core.events import Event
 from circuits.core.timers import Timer
-from hfos.logger import hilight
+from isomer.logger import hilight
 
 __author__ = "Heiko 'riot' Weinen"
 __license__ = "AGPLv3"
@@ -37,10 +37,10 @@ Doing rather not much except serve as module component entrypoint.
 
 """
 
-from hfos.component import ConfigurableComponent, handler
+from isomer.component import ConfigurableComponent, handler
 from paho.mqtt import client as mqtt
 from paho.mqtt import publish
-from hfos.navdata.events import referenceframe
+from isomer.navdata.events import referenceframe
 
 
 class MQTTGateway(ConfigurableComponent):

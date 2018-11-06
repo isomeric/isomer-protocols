@@ -50,8 +50,8 @@ This software package is a plugin module for HFOS.
           'paho-mqtt==1.2',
           'netifaces==0.10.5'
       ],
-      entry_points="""[hfos.schemata]
-      [hfos.components]
+      entry_points="""[isomer.schemata]
+      [isomer.components]
       mqttgateway=hfos.protocols.mqtt:MQTTGateway
     """,
       test_suite="tests.main.main",
