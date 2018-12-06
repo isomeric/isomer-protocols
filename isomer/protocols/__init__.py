@@ -1,2 +1,2 @@
 # coding=utf-8
-"""HFOS Protocols backend module"""
+"""Isomer Protocols backend module"""

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer Application Framework
+# ============================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -23,17 +23,17 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="hfos-protocols",
+setup(name="isomer-protocols",
       version="0.0.1",
-      description="hfos-protocols",
+      description="isomer-protocols",
 
-      author="Hackerfleet Community",
+      author="Isomer Community",
       author_email="riot@c-base.org",
-      url="https://github.com/hackerfleet/hfos-protocols",
+      url="https://github.com/isomeric/isomer-protocols",
       license="GNU Affero General Public License v3",
       packages=find_packages(),
-      long_description="""HFOS - Protocol Suite
-=====================
+      long_description="""Isomer - Protocol Suite
+=======================
 
 A component suite for m2m and other useful communication protocols.
 Currently in development:
@@ -42,17 +42,17 @@ Currently in development:
 Planned:
 * XMPP
 
-This software package is a plugin module for HFOS.
+This software package is a plugin module for Isomer.
 """,
       dependency_links=[],
       install_requires=[
-          'hfos>=1.2.0',
+          'isomer>=1.0.0',
           'paho-mqtt==1.2',
           'netifaces==0.10.5'
       ],
       entry_points="""[isomer.schemata]
       [isomer.components]
-      mqttgateway=hfos.protocols.mqtt:MQTTGateway
+      mqttgateway=isomer.protocols.mqtt:MQTTGateway
     """,
       test_suite="tests.main.main",
       )

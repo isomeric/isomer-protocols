@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer Application Framework
+# ============================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -50,7 +50,7 @@ class MQTTGateway(ConfigurableComponent):
 
     configprops = {}
 
-    channel = 'hfosweb'
+    channel = 'mqtt'
 
     def __init__(self, **kwargs):
         super(MQTTGateway, self).__init__('MQTT', **kwargs)
@@ -63,7 +63,7 @@ class MQTTGateway(ConfigurableComponent):
 
         self.subscriptions = ['test/#']
 
-        self.topic = 'hfos'
+        self.topic = 'isomer'
 
         self.client.on_connect = self._on_connect
         self.client.on_message = self._on_message
