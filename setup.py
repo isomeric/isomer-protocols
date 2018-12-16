@@ -23,16 +23,17 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="isomer-protocols",
-      version="0.0.1",
-      description="isomer-protocols",
+setup(
+    name="isomer-protocols",
+    version="0.0.1",
+    description="isomer-protocols",
 
-      author="Isomer Community",
-      author_email="riot@c-base.org",
-      url="https://github.com/isomeric/isomer-protocols",
-      license="GNU Affero General Public License v3",
-      packages=find_packages(),
-      long_description="""Isomer - Protocol Suite
+    author="Isomer Community",
+    author_email="riot@c-base.org",
+    url="https://github.com/isomeric/isomer-protocols",
+    license="GNU Affero General Public License v3",
+    packages=find_packages(),
+    long_description="""Isomer - Protocol Suite
 =======================
 
 A component suite for m2m and other useful communication protocols.
@@ -44,15 +45,15 @@ Planned:
 
 This software package is a plugin module for Isomer.
 """,
-      dependency_links=[],
-      install_requires=[
-          'isomer>=1.0.0',
-          'paho-mqtt==1.2',
-          'netifaces==0.10.5'
-      ],
-      entry_points="""[isomer.schemata]
+    dependency_links=[],
+    install_requires=[
+        'isomer>=1.0.0',
+        'paho-mqtt==1.2',
+        'netifaces==0.10.5'
+    ],
+    entry_points="""[isomer.schemata]
       [isomer.components]
       mqttgateway=isomer.protocols.mqtt:MQTTGateway
     """,
-      test_suite="tests.main.main",
-      )
+    test_suite="tests.main.main",
+)
