@@ -63,7 +63,7 @@ This software package is a plugin module for Isomer.
 """,
     dependency_links=[],
     install_requires=[
-        'isomer>=1.0.0',
+        'isomer>=1.0',
         'paho-mqtt==1.2',
         'netifaces==0.10.5'
     ],
