@@ -3,7 +3,7 @@
 
 # Isomer Application Framework
 # ============================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -68,13 +68,13 @@ class MQTTGateway(ConfigurableComponent):
         self.client.on_connect = self._on_connect
         self.client.on_message = self._on_message
 
-        #self.timer = Timer(5, Event.create('publish'), persist=True).register(self)
+        # self.timer = Timer(5, Event.create('publish'), persist=True).register(self)
 
     def ready(self, *args):
         self.log('Connecting to MQTT broker:', self.host)
 
-        #self.client.connect(self.host, self.port, self.timeout)
-        #self.client.loop_start()
+        # self.client.connect(self.host, self.port, self.timeout)
+        # self.client.loop_start()
 
     def _on_connect(self, client, userdata, flags, rc):
         self.log("Connected:", client, userdata, flags, rc)
